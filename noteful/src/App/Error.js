@@ -1,6 +1,6 @@
 import React from 'react';
 
-class MainError extends React.Component {
+class Error extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -23,4 +23,4 @@ class MainError extends React.Component {
   }
 }
 
-export default MainError;
+export default Error;

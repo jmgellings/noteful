@@ -64,7 +64,7 @@ export default class AddFolder extends Component {
       <div className="AddFolder">
         <form className="Folder__form" onSubmit={e => this.handleClickAddFolder(e)}>
           <label htmlFor="newFolderName">New Folder Name: </label>
-          <input name="newFolderName" id="newFolderName"></input>
+          <input name="newFolderName" id="newFolderName" required></input>
           <button type="submit">Add folder</button>
         </form>
 

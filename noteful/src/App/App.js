@@ -9,8 +9,7 @@ import AddFolder from '../AddFolder/AddFolder';
 import AddNote from '../AddNote/AddNote';
 import ApiContext from '../ApiContext';
 import config from '../config';
-import NavError from './NavError';
-import MainError from './MainError';
+import Error from './Error';
 import './App.css';
 
 class App extends Component {
@@ -105,18 +104,18 @@ class App extends Component {
         return (
             <ApiContext.Provider value={value}>
                 <div className="App">
-                    <NavError>
+                    <Error>
                         <nav className="App__nav">{this.renderNavRoutes()}</nav>
-                    </NavError>
+                    </Error>
                     <header className="App__header">
                         <h1>
                             <Link to="/">Noteful</Link>{' '}
                             <FontAwesomeIcon icon="check-double" />
                         </h1>
                     </header>
-                    <MainError>
+                    <Error>
                         <main className="App__main">{this.renderMainRoutes()}</main>
-                    </MainError>
+                    </Error>
                 </div>
             </ApiContext.Provider>
         );
